@@ -1,3 +1,5 @@
+const path = require("path")
+
 module.exports = {
   siteMetadata: {
     title: `Nick's resume`,
@@ -5,7 +7,8 @@ module.exports = {
     author: `nikita.luparev@gmail.com`,
   },
   plugins: [
-    `gatsby-plugin-react-helmet`,
+    "gatsby-plugin-sass",
+    "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -25,6 +28,13 @@ module.exports = {
         theme_color: `#663399`,
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+      },
+    },
+    {
+      resolve: "gatsby-plugin-root-import",
+      options: {
+        src: path.join(__dirname, "src"),
+        // pages: path.join(__dirname, 'src/pages'),
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
