@@ -8,7 +8,7 @@ export default function Summary() {
       <aside className={css.prefix}>
         <h2>Summary</h2>
       </aside>
-      <section>
+      <section className={css.content}>
         <ul>
           <li>
             Reliable Front-End Engineer with product-aimed mindset and wide
