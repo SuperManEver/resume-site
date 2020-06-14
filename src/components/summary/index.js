@@ -1,14 +1,16 @@
 import React from "react"
 
+import BlockLayout from "src/components/block-layout"
+
 import css from "./styles.module.sass"
 
 export default function Summary() {
   return (
-    <div className={css.wrapper}>
-      <aside className={css.prefix}>
+    <BlockLayout>
+      <BlockLayout.Left>
         <h2>Summary</h2>
-      </aside>
-      <section className={css.content}>
+      </BlockLayout.Left>
+      <BlockLayout.Content>
         <ul>
           <li>
             Reliable Front-End Engineer with product-aimed mindset and wide
@@ -26,7 +28,7 @@ export default function Summary() {
             attitude
           </li>
         </ul>
-      </section>
-    </div>
+      </BlockLayout.Content>
+    </BlockLayout>
   )
 }
