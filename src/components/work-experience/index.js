@@ -73,6 +73,36 @@ export default function WorkExperience() {
           />
         </BlockLayout.Content>
       </BlockLayout>
+
+      <BlockLayout>
+        <BlockLayout.Left>
+          <p className={css.companyName}>Melp.pro</p>
+          <p className={css.date}>2018-10 - 2019-01</p>
+        </BlockLayout.Left>
+        <BlockLayout.Content>
+          <p className={css.jobTitle}>Fullstack developer</p>
+          <ul>
+            <li>Update app's UI according to new design</li>
+            <li>maintaining backend Rails API</li>
+            <li>CI config and setup</li>
+            <li>Configure app's execution environment</li>
+          </ul>
+          <Tools
+            tools={[
+              "Linux Administration",
+              "Redis",
+              "Ruby on Rails",
+              "React.js",
+              "MobX",
+              "Typescript",
+              "Ansible",
+              "Devops",
+              "Capistrano",
+              "Nginx",
+            ]}
+          />
+        </BlockLayout.Content>
+      </BlockLayout>
     </>
   )
 }
