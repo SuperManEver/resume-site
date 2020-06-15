@@ -1,6 +1,7 @@
 import React from "react"
 
 import BlockLayout from "../block-layout"
+import Tools from "src/components/tools"
 
 import css from "./styles.module.sass"
 
@@ -27,6 +28,16 @@ export default function WorkExperience() {
               Implementing A/B tests for new features and running experiments
             </li>
           </ul>
+          <Tools
+            tools={[
+              "React.js 16",
+              "Webpack 4",
+              "Adaptive Layout",
+              "Redux",
+              "Sass",
+              "Flow.js",
+            ]}
+          />
         </BlockLayout.Content>
       </BlockLayout>
 
@@ -39,8 +50,27 @@ export default function WorkExperience() {
           <p className={css.jobTitle}>Frontend developer</p>
           <ul>
             <li>Desktop and Mobile version for KFC's CRM and ERP system.</li>
+            <li>
+              Created custom solution for persistence layer which reduced costs
+              of development <br /> about to 30%
+            </li>
+            <li>
+              Increased app performance by improving how graph of related data
+              gets formed
+            </li>
             <li>Сonducting interviews with Front end developers</li>
           </ul>
+          <Tools
+            tools={[
+              "Vue.js 2",
+              "Vuex",
+              "Webpack 4",
+              "Adaptive Layout",
+              "Ruby on Rails",
+              "SCSS",
+              "Capistrano",
+            ]}
+          />
         </BlockLayout.Content>
       </BlockLayout>
     </>
