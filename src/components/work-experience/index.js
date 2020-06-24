@@ -143,6 +143,70 @@ export default function WorkExperience() {
           />
         </BlockLayout.Content>
       </BlockLayout>
+
+      <BlockLayout>
+        <BlockLayout.Left>
+          <p className={css.companyName}>We Are Volt</p>
+          <p className={css.date}>2017-02 - 2018-08</p>
+        </BlockLayout.Left>
+        <BlockLayout.Content>
+          <p className={css.jobTitle}>Frontend developer</p>
+          <ul>
+            <li>
+              Web development and consulting focused on frontend part of web
+              apps: Performance, Architecture, Defining a Data Layer. Personal
+              specialties included application architecture, data model
+              definition and selecting/creating more easy to use solution for
+              working with data layer, reusability patterns, code
+              maintainability
+            </li>
+            <li>
+              Being part of a team creating and maintaining products for
+              following companise: <span>Cross Clear</span>, <span> Slyce</span>
+              , <span>GoGenie</span>, <span>Homebees</span>
+            </li>
+          </ul>
+          <Tools
+            tools={[
+              "Rails",
+              "Node.js",
+              "Postgresql",
+              "Mobx",
+              "React.js",
+              "MobX",
+              "MobX-Model",
+              "Flow type",
+              "jQuery",
+              "Adaptive layout",
+              "Docker",
+              "Sequelize.js",
+            ]}
+          />
+        </BlockLayout.Content>
+      </BlockLayout>
+
+      <BlockLayout>
+        <BlockLayout.Left>
+          <p className={css.companyName}>PyShop</p>
+          <p className={css.date}>2016-11 - 2017-02</p>
+        </BlockLayout.Left>
+        <BlockLayout.Content>
+          <p className={css.jobTitle}>Frontend developer (Internship)</p>
+          <ul>
+            <li>
+              Implemented app using React Native used for company's internal
+              purposes
+            </li>
+            <li>
+              Implemented part of Frontend app used for HR purposes using
+              React/Redux
+            </li>
+          </ul>
+          <Tools
+            tools={["JS/ES5", "React.js", "Redux", "Webpack 2", "Typescript"]}
+          />
+        </BlockLayout.Content>
+      </BlockLayout>
     </>
   )
 }
