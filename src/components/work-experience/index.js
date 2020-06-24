@@ -49,7 +49,16 @@ export default function WorkExperience() {
         <BlockLayout.Content>
           <p className={css.jobTitle}>Frontend developer</p>
           <ul>
-            <li>Desktop and Mobile version for KFC's CRM and ERP system.</li>
+            <li>
+              Desktop and Mobile version for KFC's CRM and ERP system. More{" "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://evrone.com/kfc"
+              >
+                here
+              </a>
+            </li>
             <li>
               Created custom solution for persistence layer which reduced costs
               of development <br /> about to 30%
@@ -60,6 +69,7 @@ export default function WorkExperience() {
             </li>
             <li>Сonducting interviews with Front end developers</li>
           </ul>
+
           <Tools
             tools={[
               "Vue.js 2",
@@ -84,6 +94,36 @@ export default function WorkExperience() {
           <ul>
             <li>Update app's UI according to new design</li>
             <li>maintaining backend Rails API</li>
+            <li>CI config and setup</li>
+            <li>Configure app's execution environment</li>
+          </ul>
+          <Tools
+            tools={[
+              "Linux Administration",
+              "Redis",
+              "Ruby on Rails",
+              "React.js",
+              "MobX",
+              "Typescript",
+              "Ansible",
+              "Devops",
+              "Capistrano",
+              "Nginx",
+            ]}
+          />
+        </BlockLayout.Content>
+      </BlockLayout>
+
+      <BlockLayout>
+        <BlockLayout.Left>
+          <p className={css.companyName}>Qoden</p>
+          <p className={css.date}>2018-08 - 2019-02</p>
+        </BlockLayout.Left>
+        <BlockLayout.Content>
+          <p className={css.jobTitle}>Frontend developer</p>
+          <ul>
+            <li>High end SPA for cryptocurrency exchanges</li>
+            <li>Implemented Auth flow</li>
             <li>CI config and setup</li>
             <li>Configure app's execution environment</li>
           </ul>
