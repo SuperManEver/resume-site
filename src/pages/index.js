@@ -1,19 +1,43 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 
 import Layout from "src/components/layout"
 import Summary from "src/components/summary"
 import Workexperience from "src/components/work-experience"
-// import Image from "../components/image"
-// import SEO from "../components/seo"
 
 import "./global.css"
 
-const IndexPage = () => (
-  <Layout>
-    <Summary />
-    <Workexperience />
-  </Layout>
-)
+const IndexPage = ({ data }) => {
+  const {
+    allDataJson: { nodes },
+  } = data
+
+  const [{ jobs, summary }, _] = nodes
+
+  return (
+    <Layout>
+      <Summary summary={summary} />
+      <Workexperience jobs={jobs} />
+    </Layout>
+  )
+}
+
+export const pageQuery = graphql`
+  query MyJobs {
+    allDataJson {
+      nodes {
+        summary
+        jobs {
+          employeerName
+          startDate
+          endDate
+          jobTitle
+          achievements
+          tools
+        }
+      }
+    }
+  }
+`
 
 export default IndexPage

@@ -5,10 +5,30 @@ import Tools from "src/components/tools"
 
 import css from "./styles.module.sass"
 
-export default function WorkExperience() {
+export default function WorkExperience({ jobs }) {
   return (
     <>
-      <BlockLayout>
+      {jobs.map(job => (
+        <BlockLayout key={job.employeerName}>
+          <BlockLayout.Left>
+            <p className={css.companyName}>{job.employeerName}</p>
+            <p className={css.date}>
+              2019-12 - <span className={css.present}>Present</span>
+            </p>
+          </BlockLayout.Left>
+          <BlockLayout.Content>
+            <p className={css.jobTitle}>Frontend developer</p>
+            <ul>
+              {job.achievements.map((item, idx) => (
+                <li key={idx}>{item}</li>
+              ))}
+            </ul>
+            <Tools tools={job.tools} />
+          </BlockLayout.Content>
+        </BlockLayout>
+      ))}
+
+      {/* <BlockLayout>
         <BlockLayout.Left>
           <p className={css.companyName}>Netology Group</p>
           <p className={css.date}>
@@ -39,7 +59,7 @@ export default function WorkExperience() {
             ]}
           />
         </BlockLayout.Content>
-      </BlockLayout>
+      </BlockLayout> */}
 
       <BlockLayout>
         <BlockLayout.Left>

@@ -9,11 +9,12 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-react-helmet",
+    "gatsby-transformer-json",
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        name: "data",
+        path: `${__dirname}/src/data/jobs.json`,
       },
     },
     `gatsby-transformer-sharp`,
@@ -37,6 +38,7 @@ module.exports = {
         // pages: path.join(__dirname, 'src/pages'),
       },
     },
+
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

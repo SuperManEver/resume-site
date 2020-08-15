@@ -1,0 +1,30 @@
+{
+  "summary": [
+    "Reliable Front-End Engineer with product-aimed mindset and wide experience in development of enterprise-level single-page applications (SPA) with best practices regarding architecture, technologies and tests.",
+    "Result-driven, customer-focused, highly organized and analytical software engineer with experience in developement, integration, and maintaining projects",
+    "Effective communicator, exhibit a team-oriented and collaborative attitude"
+  ],
+  "jobs": [
+    {
+      "employeerName": "Netology",
+      "startDate": "2019-12-08",
+      "endDate": "PRESENT",
+      "jobTitle": "Frontend developer",
+      "achievements": [
+        "Implemented push notifications using Firebase Cloud Messaging",
+        "Extended onboarding interface and made it more like a chat system",
+        "Created landing pages for different events, olympiads for example",
+        "Implementing A/B tests for new features and running experiments"
+      ],
+      "tools": [
+        "React.js 16",
+        "Webpack 4",
+        "Firebase Cloud Messaging",
+        "Adaptive Layout",
+        "Redux",
+        "Sass",
+        "Flow.js"
+      ]
+    }
+  ]
+}
