@@ -207,6 +207,73 @@ export default function WorkExperience() {
           />
         </BlockLayout.Content>
       </BlockLayout>
+
+      <BlockLayout>
+        <BlockLayout.Left>
+          <p className={css.companyName}>Agile Ventures</p>
+          <p className={css.date}>2015-110 - 2016-03</p>
+        </BlockLayout.Left>
+        <BlockLayout.Content>
+          <p className={css.jobTitle}>Backend developer (Internship)</p>
+          <ul>
+            <li>Refactoring and optimization events dashboard</li>
+            <li>
+              Integration with EDX platform for showing five latest events
+            </li>
+          </ul>
+          <Tools
+            tools={[
+              "JavaScript",
+              "Ruby",
+              "Ruby on Rails",
+              "PostgreSQL",
+              "Git",
+              "Heroku",
+            ]}
+          />
+        </BlockLayout.Content>
+      </BlockLayout>
+
+      <BlockLayout>
+        <BlockLayout.Left>
+          <p className={css.companyName}>Freelance Android developer</p>
+          <p className={css.date}>2011-06 - 2012-03</p>
+        </BlockLayout.Left>
+        <BlockLayout.Content>
+          <p className={css.jobTitle}>Android developer</p>
+          <ul>
+            <li>Implemented Restaurants search app</li>
+            <li>Implemented app using Geo API location service</li>
+          </ul>
+          <Tools tools={["Android", "Maven", "Gradle"]} />
+        </BlockLayout.Content>
+      </BlockLayout>
+
+      <BlockLayout>
+        <BlockLayout.Left>
+          <p className={css.companyName}>"SIAB" Bank</p>
+          <p className={css.date}>2010-11 - 2011-06</p>
+        </BlockLayout.Left>
+        <BlockLayout.Content>
+          <p className={css.jobTitle}>Java EE developer (Internship)</p>
+          <ul>
+            <li>
+              Implemented API for working with payment providers using SOAP
+              protocol
+            </li>
+            <li>Found vulnerability in existing API which </li>
+          </ul>
+          <Tools
+            tools={[
+              "Java EE",
+              "Apache maven",
+              "Java servlet",
+              "Apache tomcat",
+              "SOAP Protocol",
+            ]}
+          />
+        </BlockLayout.Content>
+      </BlockLayout>
     </>
   )
 }
