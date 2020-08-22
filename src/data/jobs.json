@@ -70,6 +70,98 @@
         "Capistrano",
         "Nginx"
       ]
+    },
+    {
+      "employeerName": "Qoden",
+      "startDate": "2018-08-01",
+      "endDate": "2019-02-01",
+      "jobTitle": "Frontend developer",
+      "achievements": [
+        "High end SPA for cryptocurrency exchanges",
+        "Implemented Auth flow",
+        "CI config and setup",
+        "Configure app's execution environment"
+      ],
+      "tools": [
+        "Linux Administration",
+        "Nginx",
+        "React.js",
+        "Typescript",
+        "Redux",
+        "Redux-Saga"
+      ]
+    },
+    {
+      "employeerName": "We Are Volt",
+      "startDate": "2017-02-01",
+      "endDate": "2018-08-01",
+      "jobTitle": "Frontend developer",
+      "achievements": [
+        "Web development and consulting focused on frontend part of web apps: Performance, Architecture, Defining a Data Layer. Personal specialties included application architecture, data model definition and selecting/creating more easy to use solution for working with data layer, reusability patterns, code maintainability",
+        "Being part of a team creating and maintaining products for following companies: Cross Clear, Slyce, GoGenie, Homebees"
+      ],
+      "tools": [
+        "Rails",
+        "Node.js",
+        "Postgresql",
+        "Mobx",
+        "React.js",
+        "MobX",
+        "MobX-Model",
+        "Flow type",
+        "jQuery",
+        "Adaptive layout",
+        "Docker",
+        "Sequelize.js"
+      ]
+    },
+    {
+      "employeerName": "PyShop",
+      "startDate": "2016-11-01",
+      "endDate": "2017-02-01",
+      "jobTitle": "Frontend developer  (Internship)",
+      "achievements": [
+        "Implemented app using React Native used for company's internal purposes",
+        "Implemented part of Frontend app used for HR purposes using React/Redux"
+      ],
+      "tools": ["JS/ES5", "React.js", "Redux", "Webpack 2", "Typescript"]
+    },
+
+    {
+      "employeerName": "Agile Ventures",
+      "startDate": "2015-01-01",
+      "endDate": "2016-03-01",
+      "jobTitle": "Backend developer  (Internship)",
+      "achievements": [
+        "Refactoring and optimization events dashboard",
+        "Integration with EDX platform for showing five latest events"
+      ],
+      "tools": [
+        "JavaScript",
+        "Ruby",
+        "Ruby on Rails",
+        "PostgreSQL",
+        "Git",
+        "Heroku"
+      ]
+    },
+
+    {
+      "employeerName": "'SIAB' Bank",
+      "startDate": "2010-11-01",
+      "endDate": "2011-06-01",
+      "jobTitle": "Java EE developer (Internship)",
+      "achievements": [
+        "Implemented API for working with payment providers using SOAP protocol",
+        "Found vulnerability in existing API which"
+      ],
+      "tools": [
+        "Java EE",
+        "Apache maven",
+        "Java servlet",
+        "Apache tomcat",
+        "SOAP Protocol"
+      ]
     }
   ]
 }
