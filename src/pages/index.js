@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 
 import Layout from "src/components/layout"
 import Summary from "src/components/summary"
@@ -12,7 +12,7 @@ const IndexPage = ({ data }) => {
     allDataJson: { nodes },
   } = data
 
-  const [{ jobs, summary }, _] = nodes
+  const [{ jobs, summary }] = nodes
 
   return (
     <Layout>
