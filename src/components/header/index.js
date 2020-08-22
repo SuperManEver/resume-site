@@ -4,7 +4,7 @@ import css from "./styles.module.sass"
 
 export default function Header() {
   return (
-    <header className={css.header}>
+    <header className={css.wrapper}>
       <div>
         <h2 className={css.name}>Nick Luparev</h2>
         <p className={css.jobTitle}>Software engineer</p>
