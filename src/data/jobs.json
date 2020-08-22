@@ -25,6 +25,51 @@
         "Sass",
         "Flow.js"
       ]
+    },
+    {
+      "employeerName": "Evrone",
+      "startDate": "2019-03-01",
+      "endDate": "2019-12-01",
+      "jobTitle": "Frontend developer",
+      "achievements": [
+        "helped to develop desktop and bobile version for KFC's CRM and ERP system",
+        "Created custom solution for frontend persistence and data fetching layer which reduced costs of development about to 30%",
+        "Increased app performance by improving data fetching layer",
+        "Сonducting interviews for a position of frontend developer with candidates"
+      ],
+      "tools": [
+        "Vue.js 2",
+        "Vuex",
+        "Webpack 4",
+        "Adaptive Layout",
+        "Ruby on Rails",
+        "SCSS",
+        "Capistrano"
+      ]
+    },
+    {
+      "employeerName": "Melp.pro",
+      "startDate": "2018-10-01",
+      "endDate": "2019-01-01",
+      "jobTitle": "Fullstack developer",
+      "achievements": [
+        "Update app's UI according to new design",
+        "maintaining backend Rails API",
+        "CI config and setup",
+        "Configure app's execution environment"
+      ],
+      "tools": [
+        "Linux Administration",
+        "Redis",
+        "Ruby on Rails",
+        "React.js",
+        "MobX",
+        "Typescript",
+        "Ansible",
+        "Devops",
+        "Capistrano",
+        "Nginx"
+      ]
     }
   ]
 }
