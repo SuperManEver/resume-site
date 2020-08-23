@@ -7,20 +7,28 @@
 
 import React from "react"
 import PropTypes from "prop-types"
+import Header from "src/components/header"
+import Nav from "src/components/navigation"
 import { useStaticQuery, graphql } from "gatsby"
 
-import Header from "./header"
-
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
+  const {
+    allDataJson: { nodes },
+  } = useStaticQuery(graphql`
+    query Summary {
+      allDataJson {
+        nodes {
+          contacts {
+            email
+            jobTitle
+            phone
+          }
         }
       }
     }
   `)
+
+  const { contacts } = nodes[0]
 
   return (
     <>
@@ -32,6 +40,8 @@ const Layout = ({ children }) => {
           padding: `0 1.0875rem 1.45rem`,
         }}
       >
+        <Header contacts={contacts} />
+        <Nav />
         <main>{children}</main>
       </div>
     </>
