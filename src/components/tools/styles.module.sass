@@ -1,22 +1,31 @@
 .tools
-    margin-top: 1rem
-    font-size: 14px
-    display: flex
+  margin-top: 1rem
+  font-size: 14px
+  display: flex
+  flex-direction: column
+
+  @media screen and (min-width: 768px)
+    flex-direction: row
     align-items: center
 
-    ul
-        padding: 0
-        margin: 0
-        margin-left: 0.3rem
+  .title
+    margin-bottom: 0.45rem
+
+  ul
+    padding: 0
+    margin: 0
+
+    @media screen and (min-width: 768px)
+      margin-left: 0.3rem
 
     ul, li
-        display: inline-block
+      display: inline-block
 
     li
-        font-size: 12px
-        margin: 0 0.2rem
-        margin-bottom: 0.3rem
-        background-color: #DCE5E7
-        color: #2F3640
-        padding: 0.2rem 0.4rem
-        border-radius: 5px
+      font-size: 12px
+      margin: 0 0.2rem
+      margin-bottom: 0.3rem
+      background-color: #DCE5E7
+      color: #2F3640
+      padding: 0.2rem 0.4rem
+      border-radius: 5px
