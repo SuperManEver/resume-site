@@ -14,9 +14,7 @@ html {
 }
 
 /* More info: https://bit.ly/2PsCnzk */
-* + * {
-  margin-top: 0.37rem;
-}
+
 html,
 body {
   margin: 0;
