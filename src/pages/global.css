@@ -14,9 +14,7 @@ html {
 }
 
 /* More info: https://bit.ly/2PsCnzk */
-* + * {
-  margin-top: 0.37rem;
-}
+
 html,
 body {
   margin: 0;
@@ -68,7 +66,7 @@ h2 {
 
 li {
   margin-top: 0.45rem;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
 }
 

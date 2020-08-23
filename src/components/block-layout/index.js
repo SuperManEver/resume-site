@@ -14,8 +14,10 @@ function Content({ children }) {
   return <section className={css.right}>{children}</section>
 }
 
-export default function BlockLayout({ children }) {
-  return <div className={css.wrapper}>{children}</div>
+export default function BlockLayout({ children, className }) {
+  const cn = `${css.wrapper} ${className}`
+
+  return <div className={cn}>{children}</div>
 }
 
 BlockLayout.Left = Left
