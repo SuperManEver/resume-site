@@ -1,12 +1,16 @@
-.wrapper
-    display: flex
-    background-color: white
-    padding: 2rem
-    border-bottom: 1px solid #D5D5D5
+.root
+  display: flex
+  flex-direction: column
+  background-color: white
+  padding: 2rem
+  border-bottom: 1px solid #D5D5D5
+
+  @media screen and (min-width: 768px)
+    flex-direction: row
 
 .left
-    flex: 1 1 22.777%
-    margin-right: 2rem
+  flex: 1 1 22.777%
+  margin-right: 2rem
 
 .right
-    flex: 0 1 73.333%
+  flex: 0 1 73.333%

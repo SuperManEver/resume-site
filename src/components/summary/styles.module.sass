@@ -4,17 +4,20 @@
   grid-gap: 1.25rem
 
   .left
-    grid-column: 1/4
-    grid-row: 1/2
+    @media screen and (min-width: 768px)
+      grid-column: 1/4
+      grid-row: 1/2
 
     .image
       width: 170px
       height: 100%
+      min-height: 120px
       background-color: gainsboro
 
   .right
-    grid-column: 4/6
-    grid-row: 1/2
+    @media screen and (min-width: 768px)
+      grid-column: 4/6
+      grid-row: 1/2
 
   .title
     margin-bottom: 1.25rem

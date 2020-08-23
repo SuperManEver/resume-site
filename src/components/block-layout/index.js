@@ -15,7 +15,7 @@ function Content({ children }) {
 }
 
 export default function BlockLayout({ children, className }) {
-  const cn = `${css.wrapper} ${className}`
+  const cn = `${css.root} ${className}`
 
   return <div className={cn}>{children}</div>
 }

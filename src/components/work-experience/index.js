@@ -15,13 +15,12 @@ export default function WorkExperience({ jobs }) {
           <BlockLayout.Left>
             <p className={css.companyName}>{job.employeerName}</p>
             <p className={css.date}>
-              {date(job.startDate)} -{" "}
-              <span className={css.present}>{date(job.endDate)}</span>
+              {date(job.startDate)} - {date(job.endDate)}
             </p>
           </BlockLayout.Left>
           <BlockLayout.Content>
             <p className={css.jobTitle}>Frontend developer</p>
-            <ul>
+            <ul className={css.achievements}>
               {job.achievements.map((item, idx) => (
                 <li key={idx}>{item}</li>
               ))}
