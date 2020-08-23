@@ -11,7 +11,7 @@ export default function WorkExperience({ jobs }) {
   return (
     <>
       {jobs.map(job => (
-        <BlockLayout key={job.employeerName}>
+        <BlockLayout key={job.employeerName} className={css.jobItem}>
           <BlockLayout.Left>
             <p className={css.companyName}>{job.employeerName}</p>
             <p className={css.date}>
