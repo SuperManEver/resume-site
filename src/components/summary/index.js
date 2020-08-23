@@ -7,16 +7,20 @@ import css from "./styles.module.sass"
 export default function Summary({ summary }) {
   return (
     <BlockLayout>
-      <BlockLayout.Left>
-        <h2>Summary</h2>
-      </BlockLayout.Left>
-      <BlockLayout.Content>
-        <ul>
-          {summary.map((item, idx) => (
-            <li key={idx}>{item}</li>
-          ))}
-        </ul>
-      </BlockLayout.Content>
+      <div className={css.root}>
+        <aside className={css.left}>
+          <div className={css.image}></div>
+        </aside>
+
+        <section className={css.right}>
+          <h2 className={css.title}>Nikita Luparev</h2>
+          <ul className={css.items}>
+            {summary.map((item, idx) => (
+              <li key={idx}>{item}</li>
+            ))}
+          </ul>
+        </section>
+      </div>
     </BlockLayout>
   )
 }

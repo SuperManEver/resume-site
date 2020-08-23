@@ -1,7 +1,18 @@
 * {
-  box-sizing: border-box;
   margin: 0;
 }
+
+html {
+  box-sizing: border-box;
+}
+/* inherit border-box on all elements in the universe and before and after
+ */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 /* More info: https://bit.ly/2PsCnzk */
 * + * {
   margin-top: 0.37rem;
@@ -20,6 +31,11 @@ body {
 /* remove margin for the main div that Gatsby mounts into */
 body > div {
   margin-top: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
 }
 
 h1,
@@ -51,7 +67,7 @@ h2 {
 }
 
 li {
-  margin-top: 0.25rem;
+  margin-top: 0.45rem;
   font-size: 14px;
   line-height: 1.5;
 }
