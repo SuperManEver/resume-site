@@ -4,13 +4,21 @@ $link: #052555
   background-color: white
   padding: 1.23rem 2rem
   margin-bottom: 0.46rem
+  box-shadow: 0 3px 5px 0 hsla(0,0%,68.2%,.5)
 
 .linksRoot
   display: flex
+  flex-direction: column
+
+  @media screen and (min-width: 768px)
+    flex-direction: row
 
   li
     margin: 0
     list-style: none
+
+    @media screen and (max-width: 768px)
+      margin-bottom: 0.35rem
 
     a
       text-decoration: none

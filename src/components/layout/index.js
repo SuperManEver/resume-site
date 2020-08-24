@@ -11,6 +11,8 @@ import Header from "src/components/header"
 import Nav from "src/components/navigation"
 import { useStaticQuery, graphql } from "gatsby"
 
+import css from "./styles.module.sass"
+
 const Layout = ({ children }) => {
   const {
     allDataJson: { nodes },
@@ -32,14 +34,7 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <div
-        style={{
-          margin: `3rem auto`,
-          maxWidth: 920,
-          width: "90%",
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
+      <div className={css.root}>
         <Header contacts={contacts} />
         <Nav />
         <main>{children}</main>
