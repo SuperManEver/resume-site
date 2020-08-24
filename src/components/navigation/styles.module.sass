@@ -19,11 +19,14 @@ $link: #052555
 
     @media screen and (max-width: 768px)
       margin-bottom: 0.35rem
+      text-align: center
 
     a
       text-decoration: none
-      margin-right: 1.75rem
       color: $link
+
+      @media screen and (min-width: 768px)
+        margin-right: 1.75rem
 
       &:hover, &.active
         border-bottom: 1px solid $link
