@@ -4,8 +4,8 @@ import css from "./styles.module.sass"
 
 export default function Header({ contacts: { email, jobTitle, phone } }) {
   return (
-    <header className={css.wrapper}>
-      <div>
+    <header className={css.root}>
+      <div className={css.left}>
         <h2 className={css.name}>Nick Luparev</h2>
         <p className={css.jobTitle}>{jobTitle}</p>
       </div>
