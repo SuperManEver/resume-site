@@ -1,6 +1,7 @@
 import React from "react"
 
 import BlockLayout from "src/components/block-layout"
+import Image from "src/components/image"
 
 import css from "./styles.module.sass"
 
@@ -9,7 +10,7 @@ export default function Summary({ summary }) {
     <BlockLayout>
       <div className={css.root}>
         <aside className={css.left}>
-          <div className={css.image}></div>
+          <div className={css.profileImg}></div>
         </aside>
 
         <section className={css.right}>
