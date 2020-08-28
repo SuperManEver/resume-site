@@ -2,7 +2,8 @@
   "contacts": {
     "email": "nikita.luparev@gmail.com",
     "jobTitle": "Software engineer",
-    "phone": "+7 707 753 65 78"
+    "phone": "+7 707 753 65 78",
+    "name": "Nikita Luparev"
   },
   "summary": [
     "Reliable Front-End Engineer with product-aimed mindset and wide experience in development of enterprise-level single-page applications (SPA) with best practices regarding architecture, technologies and tests.",

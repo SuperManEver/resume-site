@@ -4,8 +4,6 @@ import { graphql } from "gatsby"
 import Layout from "src/components/layout"
 import Summary from "src/components/summary"
 
-import "./global.css"
-
 const IndexPage = ({ data }) => {
   const {
     allDataJson: { nodes },

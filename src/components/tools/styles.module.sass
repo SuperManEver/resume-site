@@ -1,10 +1,12 @@
+@import "src/styles/variables.sass"
+
 .tools
   margin-top: 1rem
   font-size: 14px
   display: flex
   flex-direction: column
 
-  @media screen and (min-width: 768px)
+  @media screen and (min-width: $tablet-size)
     flex-direction: row
     align-items: center
 
@@ -15,7 +17,7 @@
     padding: 0
     margin: 0
 
-    @media screen and (min-width: 768px)
+    @media screen and (min-width: $tablet-size)
       margin-left: 0.3rem
 
     ul, li
