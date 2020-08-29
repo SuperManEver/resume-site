@@ -12,6 +12,7 @@ import Header from "src/components/header"
 import Nav from "src/components/navigation"
 import useSiteMetadata from "src/hooks/use-sitemetadata"
 import useContactsData from "src/hooks/use-contactsdata"
+import "src/styles/font-awesome/css/all.min.css"
 
 import { useStaticQuery, graphql } from "gatsby"
 

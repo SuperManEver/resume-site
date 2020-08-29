@@ -20,6 +20,36 @@ export default function Summary({ summary }) {
               <li key={idx}>{item}</li>
             ))}
           </ul>
+
+          <ul className={css.socialLinks}>
+            <li>
+              <a
+                className={css.socialLink}
+                target="_blank"
+                href="https://www.linkedin.com/in/nikita-luparev-007b97ba/"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                className={css.socialLink}
+                target="_blank"
+                href="https://twitter.com/nluparev"
+              >
+                <i className="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a
+                className={css.socialLink}
+                target="_blank"
+                href="https://github.com/SuperManEver"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
         </section>
       </div>
     </BlockLayout>
